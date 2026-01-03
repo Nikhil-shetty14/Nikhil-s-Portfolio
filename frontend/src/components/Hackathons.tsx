@@ -27,7 +27,7 @@ const Hackathons = () => {
   const hackathons = [
     {
       id: 1,
-      title: "MONAIthon 2025 Hackathon,JNNCE SHIMOGA",
+      title: "MONAIthon 2025 National Level 2-days Hackathon,JNNCE SHIMOGA",
       achievement: "🥉 2n Runner-up",
       project:
         "BRATS & DRIVE AI-Powered Medical Imaging Analysis, model training using Monai Framework",
@@ -88,13 +88,15 @@ const Hackathons = () => {
       achievement: "Top 4 Finalist",
       project: "Automatic Certificate Generator",
       description:
-      "Built an automation-driven certificate generation system that automatically creates, stores, and distributes personalized certificates, reducing manual effort and turnaround time.",
-      technologies: ["n8n Automation",
+        "Built an automation-driven certificate generation system that automatically creates, stores, and distributes personalized certificates, reducing manual effort and turnaround time.",
+      technologies: [
+        "n8n Automation",
         "Workflow Design",
         "Google Forms",
         "Google Drive API",
         "Email Automation",
-        "HTML-to-PDF Generation"],
+        "HTML-to-PDF Generation",
+      ],
       date: "2025",
       participants: "150+ participants",
       gradient: "from-electric-cyan to-electric-blue",
