@@ -77,9 +77,9 @@ Currently, I am looking for internship opportunities where I can apply my skills
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              {/* <p className="text-lg text-muted-foreground leading-relaxed">
                 Outside of work, I run <span className="text-primary font-bold">Pru.ai</span>, a fast-growing Kannada-first AI content channel that helps thousands of learners explore AI, tools, Internships, Hackathons and coding in their native language.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
