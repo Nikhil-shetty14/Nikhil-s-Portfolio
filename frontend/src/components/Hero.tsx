@@ -34,7 +34,7 @@ const Hero = () => {
           {/* Main Title */}
           <div className="fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              <span className="gradient-text">Hey I'm Nikhil</span>
+              <span className="gradient-text">👋 I'm Nikhil</span>
             </h1>
             <div className="text-2xl md:text-3xl font-medium text-primary mb-6">
               Full Stack Developer | AI Enthusiast

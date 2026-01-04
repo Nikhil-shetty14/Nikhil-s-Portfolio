@@ -39,8 +39,9 @@ const About = () => {
                 </p>
                  
                 <p className="text-lg md:text-xl text-foreground leading-relaxed text-justify">
-                🎓 I am a Computer Science student with a keen interest in Full-Stack Development and AI. I enjoy building projects using React, Node.js, and modern web technologies.
-Currently, I am looking for internship opportunities where I can apply my skills, learn from real-world projects, and grow as a developer.</p>
+                I focus on building reliable, scalable applications with attention to performance and user experience.
+I enjoy working across web and mobile platforms, turning complex ideas into practical solutions.
+Always learning and experimenting, I strive to create technology that delivers real impact.</p>
               </div>
             </div>
 
