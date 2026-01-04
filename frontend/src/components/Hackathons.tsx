@@ -50,7 +50,7 @@ const Hackathons = () => {
     },
     {
       id: 2,
-      title: "Web Designing Hackathon, BGSIT ACU B.G.Nagar",
+      title: "Web Designing Hackathon, BGSIT, ACU B.G.Nagar",
       achievement: "🥉 Third Place",
       project: "E-Learning Platform with AI-Driven Personalization",
       description:
@@ -71,7 +71,7 @@ const Hackathons = () => {
     {
       id: 3,
       title: "Aignite 2.0 National Level Project Expo ,AIT Chikkamagaluru",
-      achievement: "Internship Offer",
+      achievement: "🧑‍💻 Internship Offer",
       project: "Model Training",
       description:
         "BRATS & DRIVE AI-Powered Medical Imaging Analysis using Monai Framework",
@@ -85,7 +85,7 @@ const Hackathons = () => {
     {
       id: 4,
       title: "Automathon 2025 Hackathon, MCE Hassan",
-      achievement: "Top 4 Finalist",
+      achievement: "🚀 Top 4 Finalist",
       project: "Automatic Certificate Generator",
       description:
         "Built an automation-driven certificate generation system that automatically creates, stores, and distributes personalized certificates, reducing manual effort and turnaround time.",
