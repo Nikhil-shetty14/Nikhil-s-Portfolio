@@ -1,23 +1,33 @@
-import { useState } from 'react';
-import { Send, Mail, Phone, Github, Linkedin, MapPin, MessageCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
+import { useState } from "react";
+import {
+  Send,
+  Mail,
+  Phone,
+  Github,
+  Linkedin,
+  MapPin,
+  MessageCircle,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -27,21 +37,26 @@ const Contact = () => {
 
     try {
       // Simulate form submission - in a real app, you'd send this to your backend
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       // Create mailto link
-      const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
-      const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+      const subject = encodeURIComponent(
+        `Portfolio Inquiry from ${formData.name}`
+      );
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
       const mailtoUrl = `mailto:nikhilshettyvsn@gmail.com?subject=${subject}&body=${body}`;
-      
+
       window.location.href = mailtoUrl;
-      
+
       toast({
         title: "Message prepared!",
-        description: "Your email client should open with the pre-filled message.",
+        description:
+          "Your email client should open with the pre-filled message.",
       });
-      
-      setFormData({ name: '', email: '', message: '' });
+
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       toast({
         title: "Error",
@@ -59,22 +74,22 @@ const Contact = () => {
       label: "Email",
       value: "nikhilshettyvsn@gmail.com",
       href: "mailto:nikhilshettyvsn@gmail.com",
-      color: "electric-blue"
+      color: "electric-blue",
     },
     {
       icon: Phone,
       label: "Phone",
       value: "+91 8951543778",
       href: "tel:+91 8951543778",
-      color: "electric-cyan"
+      color: "electric-cyan",
     },
     {
       icon: MapPin,
       label: "Location",
       value: "Hassan, India",
       href: "#",
-      color: "electric-purple"
-    }
+      color: "electric-purple",
+    },
   ];
 
   const socialLinks = [
@@ -82,14 +97,14 @@ const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/nikhil-s-shetty0414/",
-      color: "electric-blue"
+      color: "electric-blue",
     },
     {
       icon: Github,
       label: "GitHub",
       href: "https://github.com/Nikhil-shetty14",
-      color: "electric-cyan"
-    }
+      color: "electric-cyan",
+    },
   ];
 
   return (
@@ -101,7 +116,8 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-electric mx-auto rounded-full mb-6" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to build the next generation of AI solutions? Let's discuss your project and bring innovative ideas to life.
+            Ready to build the next generation of AI solutions? Let's discuss
+            your project and bring innovative ideas to life.
           </p>
         </div>
 
@@ -110,11 +126,13 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">
-                Let's Start a <span className="gradient-text">Conversation</span>
+                Let's Start a{" "}
+                <span className="gradient-text">Conversation</span>
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                I'm always excited to discuss new opportunities, collaborate on innovative AI projects, 
-                or simply chat about the latest developments in Artificial Intelligence and Machine Learning.
+                Always happy to connect for new opportunities, collaborate on
+                full-stack projects, or chat about building scalable,
+                high-performance web and mobile applications.{" "}
               </p>
             </div>
 
@@ -136,9 +154,7 @@ const Contact = () => {
                         <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
                           {info.label}
                         </h4>
-                        <p className="text-muted-foreground">
-                          {info.value}
-                        </p>
+                        <p className="text-muted-foreground">{info.value}</p>
                       </div>
                     </div>
                   </a>
@@ -180,10 +196,13 @@ const Contact = () => {
             <div className="glass rounded-xl p-6 electric-glow">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="font-semibold text-foreground">Available for New Projects</span>
+                <span className="font-semibold text-foreground">
+                  Available for New Projects
+                </span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Currently accepting new opportunities in AI/ML development and consulting
+                Currently accepting new opportunities in Full Stack development
+                and consulting
               </p>
             </div>
           </div>
@@ -199,7 +218,10 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Your Name
                 </label>
                 <Input
@@ -215,7 +237,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Email Address
                 </label>
                 <Input
@@ -231,7 +256,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Message
                 </label>
                 <Textarea
@@ -277,7 +305,9 @@ const Contact = () => {
         <div className="mt-16 text-center">
           <div className="glass rounded-xl p-6 electric-glow max-w-md mx-auto">
             <div className="text-2xl font-bold text-primary mb-2">⚡ 24hr</div>
-            <div className="text-foreground font-semibold mb-1">Response Time</div>
+            <div className="text-foreground font-semibold mb-1">
+              Response Time
+            </div>
             <div className="text-sm text-muted-foreground">
               I typically respond to all inquiries within 24 hours
             </div>
