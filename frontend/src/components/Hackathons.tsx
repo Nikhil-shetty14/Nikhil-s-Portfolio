@@ -140,7 +140,7 @@ const Hackathons = () => {
       participants: "150+ participants",
       gradient: "from-electric-cyan to-electric-blue",
       icon: Zap,
-      photos: [mal1, mal2],
+      photos: [deb1, deb, cert],
     },
   ];
 
