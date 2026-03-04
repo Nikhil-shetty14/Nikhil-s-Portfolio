@@ -17,6 +17,12 @@ import ait from "@/assets/ait.jpeg";
 import ait1 from "@/assets/ait1.jpg";
 import mal1 from "@/assets/mal1.jpeg";
 import mal2 from "@/assets/mal2.png";
+import py1 from "@/assets/py1.jpeg";
+import py2 from "@/assets/py2.jpeg";
+import py3 from "@/assets/py3.jpeg";
+import deb from "@/assets/deb.jpeg";
+import deb1 from "@/assets/deb1.jpeg";
+import cert from "@/assets/cert.jpeg";
 
 // import jnnce1 from '@/assets/jnnce1.jpg';
 // import jnnce2 from '@/assets/jnnce2.jpg';
@@ -74,8 +80,8 @@ const Hackathons = () => {
       achievement: "🧑‍💻 Internship Offer",
       project: "Model Training",
       description:
-        "BRATS & DRIVE AI-Powered Medical Imaging Analysis using Monai Framework",
-      technologies: ["Deep Learning", "Model Training", "Koggle"],
+        "Developed an AI model for analyzing medical images using advanced deep learning techniques. The system focuses on detecting and analyzing patterns in medical datasets to assist in disease diagnosis and medical research.",
+      technologies: ["Deep Learning", "Model Training", "Koggle", "Python", "Medical Imaging","MONAI Framework"],
       date: "2025",
       participants: "400+ participants",
       gradient: "from-electric-cyan to-electric-blue",
@@ -85,7 +91,7 @@ const Hackathons = () => {
     {
       id: 4,
       title: "Automathon 2025 Hackathon, MCE Hassan",
-      achievement: "🚀 Top 4 Finalist",
+      achievement: "🚀 Special Prize Winner",
       project: "Automatic Certificate Generator",
       description:
         "Built an automation-driven certificate generation system that automatically creates, stores, and distributes personalized certificates, reducing manual effort and turnaround time.",
@@ -97,6 +103,39 @@ const Hackathons = () => {
         "Email Automation",
         "HTML-to-PDF Generation",
       ],
+      date: "2025",
+      participants: "150+ participants",
+      gradient: "from-electric-cyan to-electric-blue",
+      icon: Zap,
+      photos: [mal1, mal2],
+    },{
+      id: 3,
+      title: "Python Game Development Competition, RIT Hassan",
+      achievement: "🥈 Runner-Up",
+      project: "Python Game Development",
+      description:
+        "Developed an interactive game using Python, focusing on gameplay logic, user interaction, and basic graphics. The project demonstrated problem-solving skills and creative implementation of game mechanics.",
+      technologies: [
+        "Python",
+        "Game Logic",
+        "Problem Solving"
+      ],
+      date: "2025",
+      participants: "150+ participants",
+      gradient: "from-electric-purple to-electric-pink",
+      icon: Zap,
+      photos: [py1, py2, py3],
+    },
+    {
+      title: "Debugging Challenge, RIT Hassan",
+      achievement: "🏆 Winner",
+      description:
+      "Won the debugging challenge by identifying and fixing complex bugs in multiple programs under time constraints, demonstrating strong problem-solving and code analysis skills.",
+        technologies: [
+        "Debugging",
+        "Problem Solving",
+          "Programming Logic"
+        ],
       date: "2025",
       participants: "150+ participants",
       gradient: "from-electric-cyan to-electric-blue",

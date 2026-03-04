@@ -37,18 +37,15 @@ const Hero = () => {
               <span className="gradient-text">👋 I'm Nikhil</span>
             </h1>
             <div className="text-2xl md:text-3xl font-medium text-primary mb-6">
-              Full Stack Developer | AI Enthusiast
+            Full Stack Developer | MERN | AI-Powered Applications
             </div>
           </div>
 
           {/* Professional Summary */}
           <div className="fade-in fade-in-delay-1">
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Full-Stack MERN & Mobile Developer with hands-on internship
-              experience building production-ready applications. Experienced in
-              integrating automation and AI-driven features to enhance user
-              experience and efficiency. Passionate about solving real-world
-              problems through clean architecture and innovative solutions.{" "}
+            I build modern web and mobile applications focused on performance, scalability, and great user experiences. Passionate about transforming ideas 
+            into real products and integrating AI-powered solutions to solve real-world problems.{" "}
             </p>
           </div>
 

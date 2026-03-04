@@ -4,7 +4,7 @@ import {
   Database, 
   Cloud, 
   Wrench,
-  Zap 
+  Zap,Rocket,Bot
 } from 'lucide-react';
 
 const Skills = () => {
@@ -19,7 +19,7 @@ const Skills = () => {
         "Next.js",
         "Node.js",
         "Express.js",
-        "API",],
+         ],
       color: "electric-blue"
     },
     {
@@ -40,19 +40,19 @@ const Skills = () => {
         "MongoDB",
         "SQL",
         "Appwrite",
-        "Authentication",
+        "Firebase",
         "Firestore"],
       color: "electric-cyan"
     },
     {
       icon: Cloud,
       title: "Cloud & DevOps",
-      skills: [" API ",
+      skills: [" Google Cloud",
         "AWS",
-      "Docker",
+      "API",
       "Git & GitHub",
       "CI/CD ",
-      "Vercel "],
+     ],
       color: "electric-pink"
     },
     {
@@ -60,10 +60,31 @@ const Skills = () => {
       title: "Tools & Platforms",
       skills: ["VS Code",
         "Postman",
-        "Firebase",
-        "Firestore",
+        "Gemini API",
+        "Pycharm",
         "Android Studio",
-        "Jupyter Notebook"],
+        "Antigravity"],
+      color: "electric-blue"
+    },
+    {
+      icon: Rocket,
+      title: "Deployment & Automation",
+      skills: ["Vercel",
+        "Netlify",
+        "Render.io",
+        "Firebase Hosting",
+        "GitHub Pages",
+        "n8n Automation"],
+      color: "electric-blue"
+    },
+    {
+      icon: Bot,
+      title: "AI & Integrations",
+      skills: ["Gemini API",
+        "OpenAI API",
+        "AI Chatbot Integration",
+        "Prompt Engineering"],
+
       color: "electric-blue"
     }
   ];

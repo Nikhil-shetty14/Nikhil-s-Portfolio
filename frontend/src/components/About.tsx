@@ -34,14 +34,13 @@ const About = () => {
               {/* Text content column */}
               <div className="md:col-span-2 space-y-6 flex flex-col justify-center">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  <span className="text-primary font-semibold">B.E in Computer Science and Engineering</span> from
-                   <span className="text-primary font-semibold"> Rajeev Institute of Technology.</span>
+                  {/* <span className="text-primary font-semibold">B.E in Computer Science and Engineering</span> from */}
+                   <span className="text-primary font-semibold"> B.E in Computer Science & Engineering — Rajeev Institute of Technology, Hassan</span>
                 </p>
                  
                 <p className="text-lg md:text-xl text-foreground leading-relaxed text-justify">
-                I focus on building reliable, scalable applications with attention to performance and user experience.
-I enjoy working across web and mobile platforms, turning complex ideas into practical solutions.
-Always learning and experimenting, I strive to create technology that delivers real impact.</p>
+                I focus on building scalable and reliable web applications with strong attention to performance and user experience. I enjoy working across full-stack technologies, transforming complex ideas into practical solutions, 
+                and integrating AI-powered features to solve real-world problems.</p>
               </div>
             </div>
 
@@ -56,7 +55,7 @@ Always learning and experimenting, I strive to create technology that delivers r
                 </li>
                 <li className="flex items-center gap-3">
                   <Brain className="text-electric" size={20} />
-                  <span>Python (FastAPI / Flask) </span>
+                  <span>Python & Data Structures (DSA)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Code className="text-electric" size={20} />
@@ -72,15 +71,16 @@ Always learning and experimenting, I strive to create technology that delivers r
                 </li>
                 <li className="flex items-center gap-3">
                   <Sparkles className="text-electric" size={20} />
-                  <span>Fire Store / MongoDB</span>
+                  <span>Firestore / MongoDB</span>
                 </li>
               </ul>
+
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-              {/* <p className="text-lg text-muted-foreground leading-relaxed">
-                Outside of work, I run <span className="text-primary font-bold">Pru.ai</span>, a fast-growing Kannada-first AI content channel that helps thousands of learners explore AI, tools, Internships, Hackathons and coding in their native language.
-              </p> */}
+              { <p className="text-lg text-muted-foreground leading-relaxed">
+                Outside of work, I run <span className="text-primary font-bold"></span>learners & exploring AI tools, Internships, Hackathons and coding in their native language.
+              </p> }
             </div>
           </div>
         </div>

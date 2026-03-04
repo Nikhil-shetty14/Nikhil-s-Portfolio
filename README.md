@@ -1,51 +1,36 @@
-# Portfolio Website with RAG Chatbot
+# Personal Portfolio Website
 
-This project is a **Personal portfolio website** integrated with a **Retrieval-Augmented Generation (RAG) based chatbot**. The chatbot is powered by **FastAPI** on the backend and uses **FAISS** as the vector database to answer queries about the portfolio. The system embeds portfolio-related content, stores it in FAISS, and retrieves relevant information to answer user queries in real-time.
+This project is a **Personal portfolio website** showcasing projects, skills, experience, and contact information. Built with modern web technologies for a fast, responsive, and interactive user experience.
 
 ## Features
 
-* **Personal Portfolio Website** built with TypeScript (React + TailwindCSS).
-* **RAG Chatbot** that answers questions about the portfolio.
-* **FAISS Vector Database** for efficient similarity search.
-* **Backend with FastAPI** for serving embeddings, retrieval, and chatbot responses.
-* **Data Preparation Notebook** to handle:
-
-  * Loading data
-  * Chunking and preprocessing
-  * Generating embeddings
-  * Creating and populating FAISS vector DB
+* **Personal Portfolio Website** built with TypeScript, React, and TailwindCSS.
+* **Responsive Design** for mobile, tablet, and desktop devices.
+* **Interactive Sections** including About, Experience, Education, Projects, Skills, Hackathons, and Contact.
+* **Modern UI Components** with smooth animations and transitions.
 
 ## Tech Stack
 
-### Frontend
-
-* TypeScript
-* React
-* TailwindCSS
-
-### Backend
-
-* FastAPI
-* Python
-* FAISS (Vector Database)
-* LangChain (for RAG pipeline)
-* OpenAI API (or any embedding & LLM provider)
+* **TypeScript** - Type-safe JavaScript
+* **React** - Frontend framework
+* **TailwindCSS** - Utility-first CSS framework
+* **Vite** - Fast build tool and dev server
 
 ## Project Structure
 
 ```
-Portfolio_Website_With_Chatbot/
+My_Portfolio/
 │
 ├── frontend/                     
 │   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── App.tsx
 │   ├── public/
-│   └── package.json
-│
-├── backend/                      
-│   ├── main.py                   
-│   ├── requirements.txt          
-│   ├── faiss_index/                
-│   └── db.ipynb 
+│   ├── package.json
+│   └── vite.config.ts
 │         
 └── README.md
 ```
@@ -55,63 +40,30 @@ Portfolio_Website_With_Chatbot/
 ### Prerequisites
 
 * Node.js (>= 18)
-* Python (>= 3.9)
-* pip / virtualenv
-* Gemini API key
-
----
+* npm or bun package manager
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Prureddy/Portfolio_Website_With_Chatbot.git
-cd Portfolio_Website_With_Chatbot
+git clone https://github.com/yourusername/My_Portfolio.git
+cd My_Portfolio
 ```
 
----
-
-### 2. Setup Backend (FastAPI + FAISS)
-
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate   # On Windows use venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-Run the FastAPI server:
-
-```bash
-uvicorn main:app --reload
-```
-
-Backend will start on `http://127.0.0.1:8000`
-
----
-
-### 3. Setup Frontend (React + TypeScript)
+### 2. Setup Frontend
 
 ```bash
 cd frontend
-npm i
+npm install
 npm run dev
 ```
 
-Frontend will start on `http://localhost:8080`
+Frontend will start on `http://localhost:5173`
 
----
+## Usage
 
-### 4. Prepare Data and Create Vector DB
-
-Run the Jupyter notebook to:
-
-* Load and preprocess portfolio data
-* Generate embeddings
-* Store vectors in FAISS database
-
-Notebook: `backend/db.ipynb`
-
----
+* Open the frontend in your browser.
+* Navigate through different sections: About, Experience, Education, Projects, Skills, and Hackathons.
+* Use the Contact section to get in touch.
 
 ## Usage
 
@@ -124,12 +76,9 @@ Notebook: `backend/db.ipynb`
 
 ## Future Improvements
 
-* Add authentication for admin features.
-* Deploy on cloud platforms (Vercel for frontend, Render/Heroku for backend).
-* Improve chatbot context handling with conversation memory.
-* Extend dataset for broader queries.
-
----
+* Deploy on cloud platforms (Vercel for frontend).
+* Add more interactive features and animations.
+* Enhance accessibility and SEO.
 
 ## License
 
